@@ -1,0 +1,13 @@
+draw_set_halign(fa_center)
+draw_set_valign(fa_middle)
+if(global.hit){
+draw_set_color(c_dkgray)
+}else{
+draw_set_color(c_grey)}
+draw_roundrect(x-80,y-50,x+80,y+50,false)
+draw_set_color(color)
+if(global.hit){
+draw_text_transformed(x,y,"今日已打卡\n"+global.hitinfo,2,2,0)
+}else{
+draw_text_transformed(x,y,"点击打卡",2,2,0)
+}
